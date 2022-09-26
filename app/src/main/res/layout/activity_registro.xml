@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".RegistroActivity">
 
     <TextView
-        android:id="@+id/Score"
+        android:id="@+id/score"
         style="@style/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,24 +20,24 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etEmailRegistro"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:autofillHints=""
         android:hint="Escribe tu correo"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:textColorHint="#757575"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Score"
+        app:layout_constraintTop_toBottomOf="@+id/score"
         app:layout_constraintVertical_bias="0.25" />
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/etPasswordRegistro"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -50,31 +50,48 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailRegistro"
         app:layout_constraintVertical_bias="0.04" />
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/etPasswordConfirm"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/btnAcceder"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:hint="Confirma la contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnRegister"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword"
-        app:layout_constraintVertical_bias="0.942"
-        app:layout_constraintHorizontal_chainStyle="spread" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordRegistro"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnLogin2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Acceder"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_chainStyle="spread"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/btnRegister2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/etPasswordConfirm"-->
+    <!--        app:layout_constraintVertical_bias="0.942" />-->
 
     <Button
-        android:id="@+id/btnRegister"
+        android:id="@+id/btnRegister2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="irRegister"
+        android:onClick="RegisterUser"
         android:text="@string/btnRegistrar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordConfirm"
         app:layout_constraintVertical_bias="0.942" />
 
 
