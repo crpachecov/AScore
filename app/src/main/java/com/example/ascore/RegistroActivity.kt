@@ -1,12 +1,11 @@
 package com.example.ascore
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -38,9 +37,9 @@ class RegistroActivity : AppCompatActivity() {
         val passwordConfirm: EditText = findViewById(R.id.etPasswordConfirm)
 
 
-        if (password.getText().toString().equals(passwordConfirm.getText().toString())){
+        if (password.text.toString() == passwordConfirm.text.toString()){
 
-            auth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
+            auth.createUserWithEmailAndPassword(email.text.toString(), password.text.toString())
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
