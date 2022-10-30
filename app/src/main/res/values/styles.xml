@@ -4,4 +4,5 @@
         <item name="android:textSize">36sp</item>
         <item name="android:textColor">#3D8361</item>
     </style>
+
 </resources>
