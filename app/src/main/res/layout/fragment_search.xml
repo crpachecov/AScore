@@ -10,9 +10,11 @@
 
 
     <SearchView
+        android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-
+        android:queryHint="Busca equipos, partidos, campeonatos, jugadores"
+        android:background="#f8f9fa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
