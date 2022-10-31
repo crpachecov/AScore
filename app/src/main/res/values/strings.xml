@@ -3,4 +3,11 @@
     <string name="score">SCORE</string>
     <string name="btnRegistrar">Registrar</string>
     <string name="btnAcceder">Acceder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="namechampio">NameChampionship</string>
+    <string name="namePerfil">Nombre del usuario</string>
+    <string name="acceder">Acceder</string>
+    <string name="mis_equipos">MIS EQUIPOS</string>
+    <string name="jugadores">JUGADORES</string>
 </resources>

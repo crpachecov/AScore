@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:fontFamily="@font/roboto"
+        android:text="@string/score"
+        android:textColor="@color/green_dark"
+        android:textSize="36dp"
+        android:textStyle="bold|italic" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+
+        <View
+            android:id="@+id/matches1"
+            android:layout_width="100dp"
+            android:layout_height="99dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="start"
+            android:background="#f8f9fa"
+            android:elevation="4dp"
+            />
+
+        <View
+            android:id="@+id/matches2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:background="#f8f9fa"
+            android:elevation="4dp" />
+
+        <View
+            android:id="@+id/matches3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="end"
+            android:background="#f8f9fa"
+            android:elevation="4dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- NameChampionship -->
+    <TextView
+        android:id="@+id/namechampio"
+        android:layout_width="118dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="199dp"
+        android:text="@string/namechampio"
+        android:gravity="top"
+
+        android:textSize="12sp"
+        android:textColor="@color/green_normal"
+        />
+
+    <!-- ContainerChampionship -->
+    <View
+        android:id="@+id/containerch"
+        android:layout_width="match_parent"
+        android:layout_height="507dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="15dp"
+        android:background="#00000000"
+        android:elevation="4dp" />
+
+    <!-- navigateChampionships -->
+    <View
+        android:id="@+id/navigatecha"
+        android:layout_width="163dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="199dp"
+        android:background="#00000000" />
+
+    <!-- ContainerTable -->
+
+    <View
+        android:id="@+id/containerta"
+        android:layout_width="336dp"
+        android:layout_height="442dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="232dp"
+        android:background="#f9faf6" />
+
+</FrameLayout>

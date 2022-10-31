@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- HeaderProfile -->
+    <View
+        android:id="@+id/headerprofi"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:background="#00000000"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- image 16 -->
+    <View
+        android:id="@+id/image_16"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+
+        android:background="@drawable/ic_baseline_person_pin_24"
+        app:layout_constraintBottom_toBottomOf="@+id/headerprofi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headerprofi" />
+
+<!--    name user-->
+
+    <!-- Acceder -->
+
+    <TextView
+        android:id="@+id/perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/namePerfil"
+        android:textColor="#000000"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/headerprofi"
+        app:layout_constraintStart_toEndOf="@+id/image_16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/acceder"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:text="@string/acceder"
+
+        app:layout_constraintBottom_toBottomOf="@+id/headerprofi"
+        app:layout_constraintStart_toEndOf="@+id/image_16"
+        app:layout_constraintTop_toBottomOf="@+id/perfil"
+        app:layout_constraintVertical_bias="0.0"
+
+        android:textColor="#FA7070"/>
+
+    <!-- BodyProfile -->
+
+    <!-- MIS EQUIPOS -->
+
+    <View
+        android:id="@+id/bodyprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+
+        android:background="#00000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerprofi" />
+
+    <TextView
+        android:id="@+id/mis_equipos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+
+        android:text="@string/mis_equipos"
+        android:textColor="@color/green_dark"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bodyprofile" />
+
+    <!-- PlayerStatistics -->
+
+    <View
+        android:id="@+id/playerstati"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="#00000000"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bodyprofile"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <!-- JUGADORES -->
+    <TextView
+        android:id="@+id/jugadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+
+        android:text="@string/jugadores"
+        android:textColor="@color/green_dark"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        app:layout_constraintStart_toStartOf="@+id/playerstati"
+        app:layout_constraintTop_toTopOf="@+id/playerstati" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
+    <item android:title="Inicio"
         android:icon="@drawable/ic_baseline_home_24"
-        android:title="Inicio" />
+        android:id="@+id/home"/>
 
-    <item
-        android:icon="@drawable/ic_baseline_home_24"
-        android:title="Partidos" />
+    <item android:title="Partidos"
+        android:icon="@drawable/ic_baseline_sports_soccer_24"
+         android:id="@+id/matches"/>
 
-    <item
-        android:icon="@drawable/ic_baseline_home_24"
-        android:title="Buscar" />
+    <item android:title="Buscar"
+        android:icon="@drawable/ic_baseline_search_24"
+         android:id="@+id/search"/>
 
-    <item
-        android:icon="@drawable/ic_baseline_home_24"
-        android:title="Perfil" />
+    <item android:title="Perfil"
+        android:icon="@drawable/ic_baseline_person_24"
+         android:id="@+id/profile" />
 </menu>
