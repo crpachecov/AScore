@@ -1,7 +1,9 @@
 package com.example.ascore
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.ascore.databinding.ActivityMainBinding
 
@@ -35,6 +37,14 @@ class MainActivity : AppCompatActivity() {
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.frame_layout, fragment)
         fragmentTransaction.commit()
-
     }
+
+    fun irLogin(view: View){
+        replaceFragment(Login())
+    }
+
+    fun irProfile(view: View){
+        replaceFragment(Profile())
+    }
+
 }

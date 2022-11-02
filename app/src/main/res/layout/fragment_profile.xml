@@ -2,13 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Profile">
 
     <!-- TODO: Update blank fragment layout -->
     <!-- HeaderProfile -->
+
+    <!-- image 16 -->
     <View
         android:id="@+id/headerprofi"
         android:layout_width="wrap_content"
@@ -16,10 +17,10 @@
         android:background="#00000000"
 
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- image 16 -->
     <View
         android:id="@+id/image_16"
         android:layout_width="54dp"
@@ -52,14 +53,15 @@
         android:id="@+id/acceder"
         android:layout_width="wrap_content"
         android:layout_height="16dp"
-        android:text="@string/acceder"
+        android:onClick="irLogin"
 
+        android:text="@string/acceder"
+        android:textColor="#FA7070"
         app:layout_constraintBottom_toBottomOf="@+id/headerprofi"
         app:layout_constraintStart_toEndOf="@+id/image_16"
-        app:layout_constraintTop_toBottomOf="@+id/perfil"
-        app:layout_constraintVertical_bias="0.0"
 
-        android:textColor="#FA7070"/>
+        app:layout_constraintTop_toBottomOf="@+id/perfil"
+        app:layout_constraintVertical_bias="0.0" />
 
     <!-- BodyProfile -->
 
